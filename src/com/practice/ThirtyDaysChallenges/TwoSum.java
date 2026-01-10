@@ -8,7 +8,7 @@ public class TwoSum {
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++)
                 if (nums[j] == target - nums[i]) {
-                    return new int[]{i, j};
+                    return new int[]{nums[i], nums[j]};
                 }
         }
         return new int[] {};
@@ -17,7 +17,7 @@ public class TwoSum {
     public static void main(String[] args) {
         int arr[]={4,6,8,3};
        int result[]= towSum(arr,9);
-       System.out.println("The indexes are"+Arrays.toString(result));
+       System.out.println("The indexes values are"+Arrays.toString(result));
 
     }
 }
