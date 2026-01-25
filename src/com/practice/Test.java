@@ -7,6 +7,7 @@ public class Test {
         String s3=s1+s2;
         String s4="abcdef";
         System.out.println(s3==s4);
+        System.out.println(s3.equals(s4));
 
     }
 }
