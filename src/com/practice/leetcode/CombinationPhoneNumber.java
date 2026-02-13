@@ -18,7 +18,7 @@ public class CombinationPhoneNumber {
         for (char letter : letters.toCharArray()) {
             sb.append(letter);
             backtrack(digits, mapping, sb, index + 1);
-            sb.deleteCharAt(sb.length() - 1); // Backtrack
+            sb.deleteCharAt(sb.length() - 1);
         }
     }
 }
